@@ -1,0 +1,16 @@
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\bin\Debug\netstandard2.0\InstagramDesign.deps.json
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\bin\Debug\netstandard2.0\InstagramDesign.dll
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\bin\Debug\netstandard2.0\ref\InstagramDesign.dll
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\bin\Debug\netstandard2.0\InstagramDesign.pdb
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\InstagramDesign.csprojAssemblyReference.cache
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\InstagramDesign.AssemblyInfoInputs.cache
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\InstagramDesign.AssemblyInfo.cs
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\InstagramDesign.csproj.CoreCompileInputs.cache
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\InstagramDesign.dll
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\ref\InstagramDesign.dll
+C:\Users\charitynyanchera\Desktop\Github\InstagramDesign\InstagramDesign\InstagramDesign\obj\Debug\netstandard2.0\InstagramDesign.pdb

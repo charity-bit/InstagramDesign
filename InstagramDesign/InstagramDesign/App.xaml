@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InstagramDesign.App">
+    <Application.Resources>
+        <Color x:Key="SignUp">#4E4B4B</Color>
+        <Color x:Key="Account">#817F7F</Color>
+        <Color x:Key="FB">#000000</Color>
+        <Color x:Key="BtnTxt">#666666</Color>
+        <Color x:Key="BackgroundColor">#F0F3F6</Color>
+       <!--use black opacity 40 for placeholder text /> -->
+        <Color x:Key="Entries" >#FFFFFF</Color>
+        <Color x:Key="Entries2">#040404</Color>
+    </Application.Resources>
+</Application>

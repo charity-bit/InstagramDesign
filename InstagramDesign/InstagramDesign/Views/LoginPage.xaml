@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             xmlns:custom="clr-namespace:InstagramDesign.CustomRenderers"
+             NavigationPage.HasNavigationBar="False"
+             mc:Ignorable="d"
+             x:Class="InstagramDesign.Views.LoginPage"
+             BackgroundColor="White"
+            >
+   
+
+            
+   
+        
+        <Grid>
+        <Path  Data="M0,0H375V819H0Z" Fill="#f0f3f6" Opacity="1"  />
+
+
+        <StackLayout Margin="30,50,30,0">
+
+            <Image Source="instagram.png" HeightRequest="60" WidthRequest="190" />
+
+            <pancake:PancakeView   Margin="0,20,0,0"
+                    CornerRadius="30" WidthRequest="315"   BackgroundColor="{StaticResource BackgroundColor}"
+                                      HorizontalOptions="Center"
+                                      HeightRequest="50">
+
+                    <sh:Shadows  CornerRadius="30" HeightRequest="50" 
+                               HorizontalOptions="Center"  VerticalOptions="Center"
+                                 BackgroundColor="{StaticResource BackgroundColor}"
+                            WidthRequest="315" >
+                        <sh:Shadows.Shades>
+                            <sh:ImmutableShades>
+                                
+                                <sh:Shade  BlurRadius="10"
+                                           Opacity="0.2"
+                                           Offset="-10,-10"
+                                           Color="{StaticResource Entries2}" />
+                                
+                                <sh:Shade  BlurRadius="10"
+                                           Opacity="0.7"
+                                           Offset="10,10"
+                                           Color="{StaticResource Entries}"/>
+
+
+                            </sh:ImmutableShades>
+                        </sh:Shadows.Shades>
+
+                        <StackLayout>                     
+                          <custom:myEntry  PlaceholderColor="#000000"  VerticalOptions="CenterAndExpand"
+                                           Opacity="0.4" FontSize="16"
+                              Placeholder="Phone,email address or username" HorizontalOptions="Center"/>
+
+                        </StackLayout>
+
+                    </sh:Shadows>
+                </pancake:PancakeView>
+            <pancake:PancakeView CornerRadius="30" WidthRequest="315"
+                                     BackgroundColor="{StaticResource BackgroundColor}"
+                                     HorizontalOptions="Center"
+                                      HeightRequest="50" Margin="0,32,0,0">
+
+                    <sh:Shadows BackgroundColor="{StaticResource BackgroundColor}" VerticalOptions="Center"
+                                CornerRadius="30" HeightRequest="50"
+                            HorizontalOptions="Center" WidthRequest="315" 
+                            >
+                        <sh:Shadows.Shades>
+                            <sh:ImmutableShades>
+
+                            <sh:Shade  BlurRadius="10"
+                                           Opacity="0.2"
+                                           Offset="-10,-10"
+                                           Color="{StaticResource Entries2}" />
+
+                            <sh:Shade  BlurRadius="10"
+                                           Opacity="0.7"
+                                           Offset="10,10"
+                                           Color="{StaticResource Entries}"/>
+
+
+                        </sh:ImmutableShades>
+                        </sh:Shadows.Shades>
+
+                    <StackLayout VerticalOptions="Center">
+                        <custom:myEntry Placeholder="Password" FontSize="16" Margin="20,0,0,0"
+                                        PlaceholderColor="#000000" 
+                                        TextColor="#000000" Opacity="0.4"
+                                        />
+
+                    </StackLayout>
+
+                </sh:Shadows>
+                </pancake:PancakeView>
+
+
+            
+                <sh:Shadows  CornerRadius="40"  Margin="0,32,0,0"
+
+                             HeightRequest="50" WidthRequest="315" 
+                             BackgroundColor="#F0F3F6"
+                     Shades="{sh:NeumorphismShades}">
+                    <Button WidthRequest="315"    TextColor="Black" FontAttributes="Bold"
+                            Text="Log in" HeightRequest="50" BackgroundColor="#F0F3F6"
+                  HorizontalOptions="Center"  TextTransform="Lowercase"
+                 CornerRadius="30"             
+                           />
+                
+            </sh:Shadows>
+
+            <Label  Margin="0,25,0,0" HorizontalOptions="Center" FontSize="11">
+                <Label.FormattedText>
+                    <FormattedString >
+                        <Span Text="Forgotten your login details ?" TextColor="#817F7F" />
+                        <Span Text=" Get help with signing in." TextColor="#4E4B4B" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+            <StackLayout Orientation="Horizontal" Spacing="7"  
+                         Margin="0,40,0,0" HorizontalOptions="Center">
+                <BoxView HeightRequest="1" WidthRequest="130"  HorizontalOptions="Start"
+                         Background="#707070" VerticalOptions="Center"/>
+
+                <Label Text="or" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <BoxView HeightRequest="1" WidthRequest="130"  VerticalOptions="Center"
+                         Background="#707070" />
+            </StackLayout>
+
+            
+            
+            <sh:Shadows  CornerRadius="30"  Margin="0,32,0,0"
+
+                             HeightRequest="50" WidthRequest="315" 
+                             BackgroundColor="#F0F3F6"
+                     Shades="{sh:NeumorphismShades}">
+                <Grid>
+                    
+                    <Button WidthRequest="315"   TextTransform="Lowercase" TextColor="Black" FontAttributes="Bold"  
+                        Text="Login with Facebook" HeightRequest="50" BackgroundColor="#F0F3F6"
+                  HorizontalOptions="Center"  Opacity="1"
+                 CornerRadius="30"             
+                           />
+                    <Path  HorizontalOptions="Start" Margin="70,13,0,0" 
+                        Data="M10.332,10l.484-3.219H7.79V4.7A1.594,1.594,0,0,1,9.568,2.958h1.376V.217A16.452,16.452,0,0,0,8.5,0C6.009,0,4.38,1.542,4.38,4.332V6.785H1.609V10H4.38v7.781H7.79V10Z" Stroke="Black" Fill="Black"/>
+
+                </Grid>
+            </sh:Shadows>
+            <Label Margin="0,32,0,0" HorizontalOptions="Center" FontSize="15"> 
+                <Label.FormattedText>
+                    <FormattedString >
+                        <Span Text="Don't have an account ?" TextColor="#817F7F"/>
+                        <Span Text=" SignUp" TextColor="#4E4B4B"/>
+                        
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SignUp_Tapped" />
+
+                </Label.GestureRecognizers>
+            </Label>
+
+
+            
+        </StackLayout>
+           </Grid>
+    
+</ContentPage>
