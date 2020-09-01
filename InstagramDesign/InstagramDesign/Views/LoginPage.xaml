@@ -22,7 +22,8 @@
 
         <StackLayout Margin="30,50,30,0">
 
-            <Image Source="instagram.png" HeightRequest="60" WidthRequest="190" />
+       <!--     <Image Source="instagram.png" HeightRequest="60" WidthRequest="190" /> -->
+            <Label Text="Instagram" FontFamily="billa" FontSize="45" TextColor="Black" HorizontalOptions="Center" />
 
             <pancake:PancakeView   Margin="0,20,0,0"
                     CornerRadius="30" WidthRequest="315"   BackgroundColor="{StaticResource BackgroundColor}"
@@ -51,7 +52,8 @@
                         </sh:Shadows.Shades>
 
                         <StackLayout>                     
-                          <custom:myEntry  PlaceholderColor="#000000"  VerticalOptions="CenterAndExpand"
+                          <custom:myEntry  PlaceholderColor="#000000" FontFamily="display" 
+                                           VerticalOptions="CenterAndExpand"
                                            Opacity="0.4" FontSize="16"
                               Placeholder="Phone,email address or username" HorizontalOptions="Center"/>
 
@@ -87,7 +89,7 @@
 
                     <StackLayout VerticalOptions="Center">
                         <custom:myEntry Placeholder="Password" FontSize="16" Margin="20,0,0,0"
-                                        PlaceholderColor="#000000" 
+                                        PlaceholderColor="#000000"  FontFamily="display"
                                         TextColor="#000000" Opacity="0.4"
                                         />
 
@@ -103,15 +105,17 @@
                              HeightRequest="50" WidthRequest="315" 
                              BackgroundColor="#F0F3F6"
                      Shades="{sh:NeumorphismShades}">
-                    <Button WidthRequest="315"    TextColor="Black" FontAttributes="Bold"
-                            Text="Log in" HeightRequest="50" BackgroundColor="#F0F3F6"
-                  HorizontalOptions="Center"  TextTransform="Lowercase"
-                 CornerRadius="30"             
+                    <Button WidthRequest="315"   FontSize="16" 
+                            TextColor="#666666" FontFamily="nexa" 
+                            Text="Log in" HeightRequest="50" BackgroundColor="{StaticResource BackgroundColor}"
+                     HorizontalOptions="Center"  TextTransform="Lowercase"
+                       CornerRadius="30"             
                            />
                 
             </sh:Shadows>
 
-            <Label  Margin="0,25,0,0" HorizontalOptions="Center" FontSize="11">
+            <Label  Margin="0,25,0,0" HorizontalOptions="Center" FontFamily="nexa"
+                    FontSize="11">
                 <Label.FormattedText>
                     <FormattedString >
                         <Span Text="Forgotten your login details ?" TextColor="#817F7F" />
@@ -126,31 +130,54 @@
                 <BoxView HeightRequest="1" WidthRequest="130"  HorizontalOptions="Start"
                          Background="#707070" VerticalOptions="Center"/>
 
-                <Label Text="or" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="or" HorizontalOptions="Center" FontFamily="nexa"
+                       VerticalOptions="Center" TextColor="#666666" FontSize="18"/>
                 <BoxView HeightRequest="1" WidthRequest="130"  VerticalOptions="Center"
                          Background="#707070" />
             </StackLayout>
 
-            
-            
-            <sh:Shadows  CornerRadius="30"  Margin="0,32,0,0"
+              <sh:Shadows  CornerRadius="30" Margin="0,30,0,0"
 
                              HeightRequest="50" WidthRequest="315" 
                              BackgroundColor="#F0F3F6"
                      Shades="{sh:NeumorphismShades}">
-                <Grid>
-                    
-                    <Button WidthRequest="315"   TextTransform="Lowercase" TextColor="Black" FontAttributes="Bold"  
-                        Text="Login with Facebook" HeightRequest="50" BackgroundColor="#F0F3F6"
-                  HorizontalOptions="Center"  Opacity="1"
-                 CornerRadius="30"             
-                           />
-                    <Path  HorizontalOptions="Start" Margin="70,13,0,0" 
-                        Data="M10.332,10l.484-3.219H7.79V4.7A1.594,1.594,0,0,1,9.568,2.958h1.376V.217A16.452,16.452,0,0,0,8.5,0C6.009,0,4.38,1.542,4.38,4.332V6.785H1.609V10H4.38v7.781H7.79V10Z" Stroke="Black" Fill="Black"/>
 
-                </Grid>
+                <pancake:PancakeView CornerRadius="30"  
+                                   BackgroundColor="{StaticResource BackgroundColor}"
+  
+                                  HeightRequest="50"
+                                 WidthRequest="315">             
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
+                                 Margin="62,0,0,0" Spacing="10"
+                                 
+                               BackgroundColor="{StaticResource BackgroundColor}">
+
+
+                        <Path   VerticalOptions="Center" 
+                               Data="M10.332,10l.484-3.219H7.79V4.7A1.594,1.594,0,0,1,9.568,2.958h1.376V.217A16.452,16.452,0,0,0,8.5,0C6.009,0,4.38,1.542,4.38,4.332V6.785H1.609V10H4.38v7.781H7.79V10Z" 
+                               Stroke="Black" 
+                               Fill="Black"/>
+                        <Label WidthRequest="315" 
+                               FontFamily="nexa"  FontSize="16"
+                               TextTransform="Lowercase"  TextColor="Black"  
+                               Text="Login with Facebook" HeightRequest="50" 
+                               VerticalTextAlignment="Center" />
+
+
+
+
+
+
+
+
+                    </StackLayout>
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SignUp_Tapped" />
+                    </pancake:PancakeView.GestureRecognizers>
+               
+                    </pancake:PancakeView>
             </sh:Shadows>
-            <Label Margin="0,32,0,0" HorizontalOptions="Center" FontSize="15"> 
+            <Label Margin="0,32,0,0" HorizontalOptions="Center" FontSize="15" FontFamily="nexa"> 
                 <Label.FormattedText>
                     <FormattedString >
                         <Span Text="Don't have an account ?" TextColor="#817F7F"/>
